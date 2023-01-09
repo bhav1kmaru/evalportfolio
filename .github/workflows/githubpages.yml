@@ -23,7 +23,9 @@ jobs:
         run: npm ci
 
       - name: Build my App
-        run: npm run build && npm run export 
+        run: npm run build && npm run export
+        env:
+          CI: false 
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
