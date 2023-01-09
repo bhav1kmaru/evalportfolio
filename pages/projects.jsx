@@ -5,7 +5,7 @@ import Projects from "../src/components/Projects";
 const ProjectPage = ({ data }) => {
   return (
     <Box>
-      <Projects data={data} col={4} />
+      <Projects data={data} col={[1,2,3,4]} />
     </Box>
   );
 };

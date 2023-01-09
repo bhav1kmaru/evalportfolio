@@ -23,7 +23,7 @@ export default function Home({ data, data2 }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SimpleGrid columns={2}>
+        <SimpleGrid columns={[1,null,2]}>
           <VStack>
             <Intro
               name={data.name}
@@ -36,7 +36,7 @@ export default function Home({ data, data2 }) {
             <Education />
           </VStack>
           <Box>
-            <Projects data={data2} col={2} />
+            <Projects data={data2} col={[1,null,2]} />
           </Box>
         </SimpleGrid>
       </main>

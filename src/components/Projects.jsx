@@ -8,7 +8,7 @@ const Projects = ({data,col}) => {
   return (
     <Box w='70%' m='auto'>
       <Heading>Projects</Heading>
-        <SimpleGrid columns={col}>
+        <SimpleGrid columns={col} spacing={2}>
             {data.items.map((item)=><ProjectCard key={item.id} name={item.name} language={item.language} forks={item.forks} stars={item.stargazers_count} url={item.svn_url} />)}
         </SimpleGrid>
     </Box>
